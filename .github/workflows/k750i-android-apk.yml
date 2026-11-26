@@ -18,6 +18,10 @@ concurrency:
   cancel-in-progress: true
 jobs:
   apk:
+    if: >-
+      github.repository == 'tayga16/Ph0nix' &&
+      github.actor_id == '124491388' &&
+      github.triggering_actor == 'tayga16'
     runs-on: [self-hosted, Linux]
     timeout-minutes: 60
     env:

@@ -10,6 +10,10 @@ permissions:
   contents: read
 jobs:
   cold-boot:
+    if: >-
+      github.repository == 'tayga16/Ph0nix' &&
+      github.actor_id == '124491388' &&
+      github.triggering_actor == 'tayga16'
     runs-on:
       - self-hosted
       - Linux
